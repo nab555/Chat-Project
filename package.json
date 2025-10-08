@@ -11,5 +11,13 @@
   "license": "ISC",
   "dependencies": {
     "typescript": "^5.9.3"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nab555/Chat-Project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nab555/Chat-Project/issues"
+  },
+  "homepage": "https://github.com/nab555/Chat-Project#readme"
 }
