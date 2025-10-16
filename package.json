@@ -2,20 +2,21 @@
   "name": "chat-project",
   "version": "1.0.0",
   "description": "",
-  "type": "module",
   "main": "app.js",
   "scripts": {
     "dev": "nodemon -r tsconfig-paths/register src/app.ts | npx bunyan",
     "lint:check": "eslint src --ext .ts",
-"lint:fix": "eslint src --ext .ts --fix",
+    "lint:fix": "eslint src --ext .ts --fix",
     "prettier:check": "prettier --check \"src/**/*.{ts,json}\"",
-    "prettier:fix": "prettier --write \"src/**/*.{ts,json}\""
+    "prettier:fix": "prettier --write \"src/**/*.{ts,json}\"",
+    "build": "tsc -p . && npx tscpaths -p tsconfig.json -s ./src -o ./build"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@socket.io/redis-adapter": "^8.3.0",
+    "bullmq": "^5.61.0",
     "bunyan": "^1.8.15",
     "compression": "^1.8.1",
     "cookie-session": "^2.1.1",
@@ -52,6 +53,7 @@
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.6.2",
     "ts-node": "^10.9.2",
-    "tsconfig-paths": "^4.2.0"
+    "tsconfig-paths": "^4.2.0",
+    "typescript-transform-paths": "^3.5.5"
   }
 }

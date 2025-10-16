@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
-import { config } from "./config";
+import { config } from "@root/config";
 import Logger from 'bunyan';
 
-const log: Logger = config.createLogger('SetupDatabase'); 
+const log: Logger = config.createLogger('SetupDatabase');
 
 
 export default () => {
@@ -19,4 +19,4 @@ export default () => {
     connect();
 
     mongoose.connection.on("disconnected", connect);
-}; 
+};
