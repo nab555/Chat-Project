@@ -16,6 +16,7 @@
   "license": "ISC",
   "dependencies": {
     "@socket.io/redis-adapter": "^8.3.0",
+    "bcryptjs": "^3.0.2",
     "bullmq": "^5.61.0",
     "bunyan": "^1.8.15",
     "cloudinary": "^2.7.0",
@@ -43,6 +44,7 @@
   },
   "homepage": "https://github.com/nab555/Chat-Project#readme",
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/bunyan": "^1.8.11",
     "@types/compression": "^1.8.1",
     "@types/cookie-session": "^2.0.49",
