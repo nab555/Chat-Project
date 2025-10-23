@@ -78,7 +78,7 @@ export class ChattyServer {
         app.use((error: IErrorResponce, _req: Request, res: Response, next: NextFunction) => {
             log.error(error);
             if(error instanceof CustomError){
-                return res.status(error.statusCode).json(error.serializeErrors);
+              return res.status(error.statusCode).json(error.serializeErrors());
             }
             next();
         });
