@@ -55,6 +55,7 @@ export class UserCache extends BaseCache {
       'followersCount', JSON.stringify(followersCount),
       'followingCount', JSON.stringify(followingCount),
       'notifications', JSON.stringify(notifications),
+      'social', JSON.stringify(social),
     ];
 
     const thirdList: string[] = [
